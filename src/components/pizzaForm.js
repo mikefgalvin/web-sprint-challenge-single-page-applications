@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Route, Link, Switch, useRouteMatch } from 'react-router-dom';
 
+
 export default function Pizza(props) {
 
     const {
@@ -11,8 +12,6 @@ export default function Pizza(props) {
         submit,
     } = props
 
-    const { url } = useRouteMatch();
-    console.log('url', url);
 
     const onChange = evt => {
         const { name, value, type, checked } = evt.target
@@ -106,7 +105,7 @@ export default function Pizza(props) {
                     />
                 </label>
                 </div>
-                <button className='submitButton' >Submit Order</button>
+                <button className='submitButton' disabled={disabled}  >Submit Order</button>
             </div>
             <hr/>
         </form>
