@@ -1,38 +1,64 @@
-.App {
+.App{
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+nav {
+  text-align: right;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.pizzaBtnDiv {
+  padding: 2%;
+  padding-top: 5%;
+  margin: 0 auto;
+}
+
+button {
+  text-align: center;
+  padding: 1%;
+  margin-top: 2%;
+}
+
+
+.pizzaBtnDiv{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+}
+
+.stupid{
+  padding: 2%;
+}
+
+form {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+h2{
+  background-color: #cf0e0e;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.genInfoDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color:#cf0e0e;
+  padding: 4%;
+  font-size: 1.1rem;
+  width: 90%;
+  margin: 0 auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.si{
+  padding: 1%;
+  padding-top: 4%;
+}
+
+.si input{
+  padding: 6%;
 }
