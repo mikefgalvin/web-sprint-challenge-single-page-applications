@@ -41,7 +41,7 @@ export default function Pizza(props) {
 
             <div>
                 <div className='genInfoDiv'>
-                <label>Your Name
+                <label>Your Name:
                     <input
                         onChange={onChange}
                         value={values.name}
@@ -49,7 +49,7 @@ export default function Pizza(props) {
                         type='text'
                     />
                 </label>
-                <label>Size&nbsp;
+                <label>Size:&nbsp;
                 <select
                     value={values.size}
                     onChange={onChange}
@@ -62,6 +62,7 @@ export default function Pizza(props) {
                     <option value='xlarge'>Extra Large</option>
                 </select>
                 </label>
+                <h4>Sauce</h4>
                 <label>Red
                     <input type='radio' name='sauce' value='red' onChange=   {onChange} checked={values.sauce === 'red'}/>
                 </label>
@@ -96,14 +97,16 @@ export default function Pizza(props) {
                     <input  type='checkbox' name='olives' checked={values.olives} onChange={onChange}/>
                     </label>
                 </div>
-                <label>Special Instruction
-                    <input
-                        onChange={onChange}
-                        value={values.specialInstructions}
-                        name='specialInstructions'
-                        type='text'
-                    />
-                </label>
+                <div className='si'>
+                    <label>Special Instruction:
+                        <input
+                            onChange={onChange}
+                            value={values.specialInstructions}
+                            name='specialInstructions'
+                            type='text'
+                        />
+                    </label>
+                </div>
                 </div>
                 <button className='submitButton' disabled={disabled}  >Submit Order</button>
             </div>

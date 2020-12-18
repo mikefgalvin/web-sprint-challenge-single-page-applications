@@ -1,5 +1,6 @@
+import './App.css';
 import React, { useState, useEffect } from "react";
-import { Route, Link, Switch } from 'react-router-dom';
+import { Route, Link, Switch, NavLink } from 'react-router-dom';
 import Pizza from './components/pizzaForm';
 import Order from './components/orders';
 import schema from './Validations/formSchema';
@@ -99,15 +100,12 @@ useEffect(() => {
 
   return (
     <>
-      <h1>Lambda Eats</h1>
       <nav className="navbar">
-        <li>
           <Link to="/">Home</Link>
-        </li>
       </nav>
-      <div>
-        <button>
-        <Link to="/pizza">Make Your Own Pizza</Link>
+      <div className='pizzaBtnDiv'>
+        <button className='stupid'>
+        <NavLink exact activeClassName="active" to="/pizza">Make Your Own Pizza</NavLink>
         </button>
       </div>
       <div className="App">
